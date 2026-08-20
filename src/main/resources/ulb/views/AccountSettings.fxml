@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #131318;"
+            stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="ulb.views.accounts.AccountSettingsView">
+
+    <VBox alignment="CENTER" layoutX="100" layoutY="30" maxWidth="350" spacing="20" style="-fx-padding: 20;"/>
+
+    <VBox alignment="CENTER" layoutY="0" prefHeight="400.0" prefWidth="340.0" spacing="15"
+          style="-fx-background-color: #131318; -fx-background-radius: 10; -fx-padding: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0.2, 0, 3);">
+
+        <Label alignment="CENTER" style="-fx-font-size: 26;" styleClass="auth-title" text="%account_settings"/>
+
+        <ImageView fx:id="profileImageView"
+                   fitWidth="32"
+                   fitHeight="32"
+                   preserveRatio="true"
+                   smooth="true"/>
+
+        <VBox alignment="CENTER" spacing="5">
+            <Label styleClass="input-label" text="%username"/>
+            <TextField fx:id="usernameField" maxWidth="280" promptText="%ask_username" styleClass="auth-text-field"/>
+        </VBox>
+
+        <VBox alignment="CENTER" spacing="5">
+            <Label styleClass="input-label" text="%password"/>
+            <PasswordField fx:id="passwordField" maxWidth="280" promptText="%ask_password"
+                           styleClass="auth-password-field"/>
+        </VBox>
+
+        <VBox alignment="CENTER" spacing="5">
+            <Label styleClass="input-label" text="%confirm_password"/>
+            <PasswordField fx:id="confirmPasswordField" maxWidth="280" promptText="%ask_password_confirm"
+                           styleClass="auth-password-field"/>
+        </VBox>
+
+        <HBox alignment="CENTER" spacing="8">
+            <CheckBox fx:id="keepLoggedCheckbox" styleClass="auth-check-box" textFill="#77d077"/>
+            <Label styleClass="auth-check-box" text="%keep_logged"/>
+        </HBox>
+
+        <Button fx:id="profileImageButton" maxWidth="280" styleClass="account-settings-logout-button">
+            <graphic>
+                <HBox alignment="CENTER" spacing="8">
+                    <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                        <image>
+                            <Image url="@../../images/account-settings.png"/>
+                        </image>
+                    </ImageView>
+                    <Label styleClass="logout-text" text="%select_profile_picture"/>
+                </HBox>
+            </graphic>
+        </Button>
+
+        <Button fx:id="saveButton" maxWidth="180" styleClass="auth-button" text="%save"/>
+
+        <VBox alignment="CENTER" prefHeight="300.0" prefWidth="260.0" spacing="10"
+              style="-fx-background-color: #2a1a1f; -fx-background-radius: 10; -fx-padding: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.2, 0, 2);">
+
+            <Label alignment="CENTER" style="-fx-text-fill: #ff6b6b; -fx-font-size: 16px; -fx-font-weight: bold;"
+                   text="%other_options"/>
+
+            <Button fx:id="deleteProfileImageButton" maxWidth="240" styleClass="account-settings-logout-button">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="8">
+                        <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/delete-profile-picture.png"/>
+                            </image>
+                        </ImageView>
+                        <Label styleClass="logout-text" text="%delete_profile_picture"/>
+                    </HBox>
+                </graphic>
+            </Button>
+
+            <Button fx:id="logoutButton" maxWidth="240" styleClass="account-settings-logout-button">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="8">
+                        <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/logout.png"/>
+                            </image>
+                        </ImageView>
+                        <Label styleClass="logout-text" text="%logout"/>
+                    </HBox>
+                </graphic>
+            </Button>
+
+            <Button fx:id="deleteButton" maxWidth="240" styleClass="account-settings-delete-button">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" spacing="8">
+                        <ImageView fitHeight="16" fitWidth="16" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/delete-account.png"/>
+                            </image>
+                        </ImageView>
+                        <Label styleClass="delete-account-text" text="%delete_account"/>
+                    </HBox>
+                </graphic>
+            </Button>
+        </VBox>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" spacing="5" stylesheets="@../../style/style.css"
+      xmlns="http://javafx.com/javafx/21.0.6" fx:controller="ulb.views.playboxes.NowPlayingBoxView">
+
+    <!-- New Label above the HBox -->
+    <Label fx:id="nextSongLabel" style="-fx-text-fill: white; -fx-font-size: 10px;"/>
+
+    <HBox prefHeight="50.0" prefWidth="200.0" spacing="10" style="-fx-background-color: #131318; -fx-padding: 5px;"
+          styleClass="playing-box">
+        <ImageView fx:id="albumCover" fitHeight="50" fitWidth="50" onMouseClicked="#onAlbumCoverClick"/>
+        <Button fx:id="songLyricsButton" maxWidth="Infinity" onAction="#onSongLyricsButtonClick"
+                style="-fx-background-color: transparent; -fx-padding: 0; -fx-cursor: hand;">
+            <graphic>
+                <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="150.0" spacing="10.0">
+                    <Label fx:id="songTitle" prefWidth="150.0" style="-fx-text-fill: white; -fx-font-size: 14px;"
+                           text="%title"/>
+                    <Label fx:id="artistName" prefWidth="150.0" style="-fx-text-fill: grey; -fx-font-size: 12px;"
+                           text="%artist"/>
+                </VBox>
+            </graphic>
+        </Button>
+    </HBox>
+
+</VBox>

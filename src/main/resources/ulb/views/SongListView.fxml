@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:id="songScrollPane"
+            fitToWidth="true"
+            fitToHeight="true"
+            vbarPolicy="ALWAYS"
+            stylesheets="@../../style/style.css"
+            xmlns="http://javafx.com/javafx/21.0.6"
+            fx:controller="ulb.views.songs.SongListView">
+    <VBox fx:id="playlistBox" spacing="10" styleClass="music-list"/>
+</ScrollPane>

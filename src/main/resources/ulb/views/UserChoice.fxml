@@ -1,0 +1,50 @@
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.String?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml"
+            fx:id="scrollPane"
+            fx:controller="ulb.views.accounts.UserChoiceView"
+            stylesheets="@../../style/style.css"
+            fitToHeight="true" fitToWidth="true"
+            hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+            prefWidth="800" prefHeight="600">
+
+    <BorderPane prefWidth="800" prefHeight="600">
+
+        <top>
+            <VBox alignment="TOP_CENTER" style="-fx-padding: 15;">
+                <ComboBox fx:id="languageComboBox"
+                          promptText="Choisir la langue"
+                          maxWidth="200"
+                          styleClass="language-combo-box">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="English"/>
+                            <String fx:value="Français"/>
+                            <String fx:value="Nederlands"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </VBox>
+        </top>
+
+        <center>
+            <VBox fx:id="wrapper"
+                  alignment="CENTER"
+                  spacing="30"
+                  prefWidth="Infinity" prefHeight="Infinity"
+                  style="-fx-padding: 30;">
+                <HBox fx:id="circleContainer"
+                      alignment="CENTER_LEFT"
+                      spacing="30"
+                      style="-fx-background-color: transparent;"
+                      maxWidth="Infinity"/>
+            </VBox>
+        </center>
+
+    </BorderPane>
+</ScrollPane>

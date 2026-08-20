@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id="searchBar" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="29.0" prefWidth="250.0"
+      style="-fx-background-color: #131318;" xmlns="http://javafx.com/javafx/21.0.6"
+      fx:controller="ulb.views.searches.SearchBarView">
+    <TextField fx:id="searchText" prefHeight="0.0" prefWidth="550.0" promptText="%search" styleClass="search-bar"
+               stylesheets="@../../style/style.css"/>
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" maxHeight="400" minHeight="335" prefHeight="335" prefWidth="250.0"
+                styleClass="search-bar-scroll" stylesheets="@../../style/style.css"
+                style="-fx-background-color: black; -fx-border-color: #1DB954" visible="false">
+        <VBox fx:id="listResult" prefHeight="390.0" prefWidth="346.0" style="-fx-background-color: #131318;"/>
+    </ScrollPane>
+</VBox>

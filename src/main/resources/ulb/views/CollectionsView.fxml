@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" spacing="5.0" xmlns="http://javafx.com/javafx/21.0.6"
+      fx:controller="ulb.views.CollectionsView">
+    <Label alignment="CENTER" minHeight="33.0" prefHeight="33.0" prefWidth="150.0" styleClass="rectangle-box"
+           stylesheets="@../../style/style.css" text="%collections" textAlignment="CENTER"/>
+
+    <ScrollPane fitToWidth="true" prefWidth="150.0" stylesheets="@../../style/style.css" VBox.vgrow="ALWAYS">
+
+        <VBox fx:id="CollectionsVBox" prefWidth="150.0" spacing="5" stylesheets="@../../style/style.css"/>
+
+    </ScrollPane>
+</VBox>

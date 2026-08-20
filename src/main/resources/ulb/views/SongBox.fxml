@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<HBox xmlns:fx="http://javafx.com/fxml/1" fx:id="box" alignment="CENTER_LEFT" onMouseClicked="#handleClick" prefHeight="32.0" prefWidth="123.0"
+      spacing="10" styleClass="music-box" xmlns="http://javafx.com/javafx/21.0.6"
+      fx:controller="ulb.views.songs.SongBoxView">
+
+    <ImageView fx:id="imageView" fitHeight="50.0" fitWidth="50.0"/>
+
+    <VBox fx:id="textContainer" spacing="5">
+        <!-- Les labels seront ajoutés dynamiquement dans le contrôleur -->
+    </VBox>
+
+    <Region HBox.hgrow="ALWAYS"/>
+</HBox>

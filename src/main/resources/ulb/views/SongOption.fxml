@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="417.0"
+            prefWidth="303.0"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="ulb.views.songs.SongOptionView"
+            stylesheets="@../../style/style.css"
+            styleClass="option-pane">
+
+    <TextField fx:id="titleField" layoutX="61.5" layoutY="35.0"
+               styleClass="option-text-field"/>
+    <Label fx:id="titleText" layoutX="125.0" layoutY="12.0"
+           text="%title" styleClass="option-label"/>
+
+    <Label fx:id="artistText" layoutX="125.0" layoutY="70.0"
+           text="%artist" styleClass="option-label"/>
+    <TextField fx:id="artistField" layoutX="61.5" layoutY="93.0"
+               styleClass="option-text-field"/>
+
+    <Label fx:id="albumText" layoutX="125.0" layoutY="128.0"
+           text="%album" styleClass="option-label"/>
+    <TextField fx:id="albumField" layoutX="61.5" layoutY="151.0"
+               styleClass="option-text-field"/>
+
+
+    <Button fx:id="saveButton" layoutX="104.0" layoutY="207.0"
+            mnemonicParsing="false"
+            text="%save" styleClass="option-button"/>
+
+    <Button fx:id="favoritesButton" layoutX="37.0" layoutY="256.0"
+            mnemonicParsing="false" onAction="#handleFavoritesButtonClick"
+            text="%favorites" styleClass="option-button"/>
+
+    <Button fx:id="playlistButton" layoutX="173.0" layoutY="256.0"
+            mnemonicParsing="false" onAction="#handlePlaylistButtonClick"
+            text="%playlist" styleClass="option-button"/>
+
+    <Button fx:id="queueButton" layoutX="37.0" layoutY="293.0"
+            mnemonicParsing="false" onAction="#handleQueueButtonClick"
+            text="%queue" styleClass="option-button"/>
+
+    <Button fx:id="tagButton" layoutX="173.0" layoutY="293.0"
+            mnemonicParsing="false" onAction="#handleTagButtonClick"
+            text="%tags" styleClass="option-button"/>
+
+    <Button fx:id="coverButton" layoutX="37.0" layoutY="330.0"
+            mnemonicParsing="false" onAction="#handleCoverButtonClick"
+            text="%cover" styleClass="option-button"/>
+
+    <Button fx:id="lyricsButton" layoutX="173.0" layoutY="330.0"
+            mnemonicParsing="false" onAction="#handleLyricsButtonClick"
+            text="%lyrics" styleClass="option-button"/>
+
+    <Button fx:id="deleteButton" layoutX="104.0" layoutY="377.0"
+            mnemonicParsing="false" onAction="#handleDeleteSongButtonClick"
+            text="%delete_song" styleClass="option-deletebutton"/>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      fx:controller="ulb.views.BigCoverView"
+      alignment="TOP_CENTER"
+      spacing="3"
+      style="-fx-padding: 20px;">
+
+    <ImageView fx:id="songImageView" preserveRatio="true" onMouseClicked="#handleImageClick"/>
+
+    <Label fx:id="songTitleLabel" style="-fx-font-size: 14px; -fx-font-weight: bold;" styleClass="song-title"
+           stylesheets="@../../style/style.css" text="%title"/>
+    <Label fx:id="artistNameLabel" style="-fx-font-size: 12px;" styleClass="song-artist"
+           stylesheets="@../../style/style.css" text="%artist"/>
+    <Label fx:id="albumNameLabel" style="-fx-font-size: 12px;" styleClass="song-album"
+           stylesheets="@../../style/style.css" text="%album"/>
+    <Label fx:id="tagsLabel" style="-fx-font-size: 12px;" styleClass="song-tags"
+           stylesheets="@../../style/style.css" text="%tags"/>
+
+</VBox>

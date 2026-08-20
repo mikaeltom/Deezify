@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="417.0" prefWidth="303.0"
+            style="-fx-background-color: #131318;" xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="ulb.views.options.LyricsView">
+
+    <ButtonBar fx:id="lyricsBar" layoutX="50.0" layoutY="100.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="importLyricsButton" maxWidth="Infinity" onAction="#handleLyricsImportButtonClick"
+                    prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="lyrics-button" stylesheets="@../../style/style.css" text="%import_lyrics"
+                    textAlignment="CENTER"/>
+        </buttons>
+    </ButtonBar>
+
+    <ButtonBar fx:id="deleteLyricsBar" layoutX="50.0" layoutY="170.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="deleteLyricsButton" maxWidth="Infinity" onAction="#handleDeleteLyricsButtonClick"
+                    prefHeight="40.0" prefWidth="200.0"
+                    style="-fx-text-fill: #b80707; -fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="lyrics-delete-button" stylesheets="@../../style/style.css" text="%delete_lyrics"
+                    textAlignment="CENTER"/>
+        </buttons>
+    </ButtonBar>
+
+    <ButtonBar fx:id="closeLyricsBar" layoutX="50.0" layoutY="240.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="closeLyricsButton" maxWidth="Infinity" onAction="#handleCloseLyricsButtonClick"
+                    prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="lyrics-button" stylesheets="@../../style/style.css" text="%close"
+                    textAlignment="CENTER">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Button>
+        </buttons>
+    </ButtonBar>
+
+</AnchorPane>

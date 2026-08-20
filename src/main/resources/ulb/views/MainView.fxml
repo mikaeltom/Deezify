@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" minHeight="600" minWidth="800" prefHeight="600.0" prefWidth="800.0"
+            style="-fx-background-color: #131318;" xmlns="http://javafx.com/javafx/23.0.1"
+            fx:controller="ulb.views.MainView">
+
+    <AnchorPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0">
+        <StackPane alignment="TOP_CENTER" AnchorPane.bottomAnchor="110" AnchorPane.leftAnchor="185"
+                   AnchorPane.rightAnchor="185" AnchorPane.topAnchor="60.0">
+            <VBox fx:id="libraryContainer" alignment="TOP_CENTER" maxHeight="800" maxWidth="800" spacing="10"
+                  styleClass="rectangle-box" stylesheets="@../../style/style.css">
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1DB954"
+                       stylesheets="@../../style/style.css" text="%your_songs"/>
+            </VBox>
+        </StackPane>
+    </AnchorPane>
+
+
+    <StackPane fx:id="playerAnchor" alignment="BOTTOM_CENTER" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0"
+               AnchorPane.rightAnchor="0.0">
+    </StackPane>
+
+
+    <StackPane fx:id="collectionsAnchor" AnchorPane.bottomAnchor="80" AnchorPane.topAnchor="59">
+    </StackPane>
+
+
+    <Button fx:id="addMusicButton" mnemonicParsing="false" prefHeight="76.0" prefWidth="150.0" styleClass="button-text"
+            stylesheets="@../../style/style.css" text="%import_music" textAlignment="JUSTIFY" textFill="#131318"
+            AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0.0">
+        <font>
+            <Font name="Goudy Old Style" size="12.0"/>
+        </font>
+    </Button>
+
+    <ImageView fitHeight="85.0" fitWidth="50.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../images/genie-logiciel-logo-black-circle.png"/>
+    </ImageView>
+
+    <Button fx:id="settingsButton" layoutX="53.0" layoutY="14.0" minHeight="4.0" mnemonicParsing="false"
+            prefHeight="33.0" prefWidth="33.0" styleClass="button-icon-no-background"
+            stylesheets="@../../style/style.css">
+        <graphic>
+            <ImageView fitHeight="33.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../images/rouage.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button fx:id="accountSettingsButton" alignment="TOP_CENTER" maxHeight="33.0" maxWidth="33.0" minHeight="4.0"
+            mnemonicParsing="false" prefHeight="33.0" prefWidth="33.0" styleClass="button-icon-no-background"
+            stylesheets="@../../style/style.css" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="325.0"
+            AnchorPane.topAnchor="14.0">
+        <graphic>
+            <ImageView fitHeight="33.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../images/account-settings.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <HBox fx:id="searchBar" alignment="CENTER" layoutX="435.0" layoutY="14.0" prefHeight="33.0" prefWidth="266.0"
+          AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="-1.0">
+    </HBox>
+
+    <VBox fx:id="nowPlayingContainer" minHeight="50" minWidth="200" prefHeight="50" prefWidth="200"
+          AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="0.0"/>
+</AnchorPane>

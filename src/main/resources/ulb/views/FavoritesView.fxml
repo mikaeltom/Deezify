@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="417.0" prefWidth="303.0"
+            style="-fx-background-color: #131318;" xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="ulb.views.options.FavoritesView">
+
+    <ButtonBar fx:id="FavoritesBar" layoutX="50.0" layoutY="100.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="importFavoritesButton" maxWidth="Infinity" onAction="#handleFavoritesImportButtonClick"
+                    prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="favorites-button" stylesheets="@../../style/style.css" text="%import_favorites"
+                    textAlignment="CENTER"/>
+        </buttons>
+    </ButtonBar>
+
+    <ButtonBar fx:id="deleteFavoritesBar" layoutX="50.0" layoutY="170.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="deleteFavoritesButton" maxWidth="Infinity" onAction="#handleDeleteFavoritesButtonClick"
+                    prefHeight="40.0" prefWidth="200.0"
+                    style="-fx-text-fill: #b80707; -fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="favorites-delete-button" stylesheets="@../../style/style.css"
+                    text="%delete_favorites"
+                    textAlignment="CENTER"/>
+        </buttons>
+    </ButtonBar>
+
+    <ButtonBar fx:id="closeFavoritesBar" layoutX="50.0" layoutY="240.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="closeFavoritesButton" maxWidth="Infinity" onAction="#handleCloseFavoritesButtonClick"
+                    prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="favorites-button" stylesheets="@../../style/style.css" text="%close"
+                    textAlignment="CENTER">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Button>
+        </buttons>
+    </ButtonBar>
+
+</AnchorPane>

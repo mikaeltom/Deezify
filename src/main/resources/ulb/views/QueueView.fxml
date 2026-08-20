@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="417.0" prefWidth="303.0"
+            style="-fx-background-color: #131318;" xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="ulb.views.options.QueueView">
+
+    <ButtonBar fx:id="QueueBar" layoutX="50.0" layoutY="100.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="importQueueButton" maxWidth="Infinity" onAction="#handleQueueImportButtonClick"
+                    prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="queue-button" stylesheets="@../../style/style.css" text="%add_to_queue"
+                    textAlignment="CENTER"/>
+        </buttons>
+    </ButtonBar>
+
+    <ButtonBar fx:id="deleteQueueBar" layoutX="50.0" layoutY="170.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="deleteQueueButton" maxWidth="Infinity" onAction="#handleDeleteQueueButtonClick"
+                    prefHeight="40.0" prefWidth="200.0"
+                    style="-fx-text-fill: #b80707; -fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="queue-delete-button" stylesheets="@../../style/style.css" text="%remove_from_queue"
+                    textAlignment="CENTER"/>
+        </buttons>
+    </ButtonBar>
+
+    <ButtonBar fx:id="closeQueueBar" layoutX="50.0" layoutY="240.0" prefHeight="50.0" prefWidth="200.0">
+        <buttons>
+            <Button fx:id="closeQueueButton" maxWidth="Infinity" onAction="#handleCloseQueueButtonClick"
+                    prefHeight="40.0" prefWidth="200.0" style="-fx-border-width: 2px; -fx-font-weight: bold;"
+                    styleClass="queue-button" stylesheets="@../../style/style.css" text="%close"
+                    textAlignment="CENTER">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </Button>
+        </buttons>
+    </ButtonBar>
+
+</AnchorPane>
