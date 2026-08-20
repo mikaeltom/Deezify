@@ -70,17 +70,20 @@ The application was built around a set of user stories, refined together with th
 - Story 6: Add predefined and custom tags to tracks
 - Story 7: Search tracks by title, artist, album, or tags
 - Bonus: Profanity filter for user-created tags
+
 **Iteration 2**
 - Story 2: Playback queue (add/remove tracks, auto-play next, clear queue)
 - Story 8: Playlists (create, reorder tracks via drag & drop, delete)
 - Story 13: Import and display lyrics for a track
 - Story 19: Import and display album covers
 - Refinements to Stories 1, 4 and 6
+
 **Iteration 3**
 - Story 14: Karaoke mode with synchronized, scrolling lyrics
 - Story 21: Default "Favorites" playlist
 - Bonus: Find a track by searching its lyrics in the search bar
 - General code refactor
+
 **Iteration 4**
 - Story 18: Multilingual support (French, Dutch, English), tied to the user's account
 - Story 22: Local user accounts, each with their own playlists
