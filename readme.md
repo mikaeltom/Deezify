@@ -17,6 +17,8 @@ Management** (Génie logiciel et gestion de projets) course at the **Université
 
 ![me](docs/videos/demo.gif)
 
+[Click here to see the full video on YouTube.](https://youtu.be/WWFQLCM41m4)
+
 ## Methodology
  
 The project was carried out using the **Extreme Programming (XP)** methodology, over **4
